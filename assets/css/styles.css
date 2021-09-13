@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #1c1c1c;
+  color: #FFFFFF;  
+  }
+
+header nav {
+    background-color: #ff008c;}
+
+main {
+  margin: 9rem auto 9rem auto;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+}
+a:active{
+  text-decoration: none;
+  color:#000000;
+}
+a:hover{
+  text-decoration: none;
+  color:#FFFFFF!important;
+}
+a:focus{
+  text-decoration: none;
+  color:#000000;
+}
+
+.btn-secondary {
+  background-color: #ff008c;
+  color: #000000;
+  border-style: none;
+  box-shadow: none !important; }
+
+.btn-secondary:active {
+  background-color: #81054b !important;}
+
+.btn-secondary:hover {
+  background-color: #81054b;
+  border-style: solid;
+  border-color: #FFFFFF;}
+
+.btn-secondary:focus {
+  background-color: #81054b; }
+
+.footer {
+  background-color: #ff008c;}
+
+.card {
+  background-color: #1c1c1c;}
+  
+.card-group {
+  margin-left: 2rem;
+  margin-right: 2rem;}
