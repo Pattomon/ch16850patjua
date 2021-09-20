@@ -47,3 +47,33 @@ function claseSegunda() {
         }
     }
 }
+
+function claseTercera() {
+    let numeroingresado;
+    let numerocorregido = 0;
+    let myValid = true;
+    let tresVeces = 0;
+    while ((myValid) && (tresVeces < 3)) {  //condición: la var myValid debe ser true (default) y el contador tresVeces debe ser menor a 3
+        numeroingresado = parseInt(prompt(`Ingresá 3 nros. cualquiera`));
+
+        if (Number(numeroingresado)) { //si es nan, no entra y pasa al else
+            MyValid = true;
+            tresVeces = tresVeces + 1;
+            alert(`Ya ingresaste en la instancia nro ${tresVeces}.`)
+        }
+        else { //pide un nuevo número, que convertimos en el número ingresado actualizando el valor de la variable
+            MyValid = false;
+            alert(`Ese no es un número.`)
+            numerocorregido = parseInt(prompt(`Ingresá un nro.`));
+            numeroingresado = numerocorregido; //acá actualiza el valor de la variable que va a salir del ciclo cuando se cumpla la siguiente condición
+            if (Number(numerocorregido)) {
+                //si el dato que pedí corregir es un número, da true al validador y suma 1 al contador
+                MyValid = true;
+                tresVeces = tresVeces + 1;
+                alert(`Ya vamos por la instancia ${tresVeces}.`)
+            } else {
+                alert(`Pero si serás, por favor te pedí 3 nros, NÚMEROS. Intentá de nuevo`) //sino, dice basta y vuelve a pedir que lo corrijas
+            }
+        }
+    }
+}
