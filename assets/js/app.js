@@ -77,3 +77,42 @@ function claseTercera() {
         }
     }
 }
+
+
+//funciones relacionadas clase 04 - desafío complementario)
+function restar(num1, num2) {
+    if (num1 > num2) {
+        resta = num1 - num2
+    } else {
+        resta = num2 - num1;
+    }
+    return resta;
+}
+function noiguales(num1, num2) {
+    let resultadonuevo = true;
+    if (num1 == num2) {
+        resultadonuevo = false;
+    }
+    return resultadonuevo;
+}
+function claseCuartafuncionesrel() {
+    let pirUlo = prompt(`Decime tu nombre`);
+    do {
+        alert(`Ingresá 2 números y vamos a restar el menor al mayor.`);
+        let num1 = parseInt(prompt(`Ingresá un 1er número`));
+        let num2 = parseInt(prompt(`Ingresá un 2do número`));
+        if ((isNaN(num1)) || (isNaN(num2))) {
+            alert(`Hola ${pirUlo}.\nPor favor recordá ingresar solo números.`);
+        } else {
+            if (noiguales(num1, num2)) {
+                let resultadonuevo = restar(num1, num2);
+                alert(`Hola ${pirUlo}.\nEl resultado de la resta del nro menor al mayor es ${resultadonuevo}.`);
+            } else {
+                alert(`Hola ${pirUlo}.\nLos nros ingresados son iguales, por favor realizá los pasos de nuevo.`);
+            }
+        }
+    }
+    while (respuesta = prompt(`Ingrese 'y' para continuar o cualquier otra tecla para cancelar`) == "y");
+}
+//fin funciones relacionadas
+
